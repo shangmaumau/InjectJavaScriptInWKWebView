@@ -2,6 +2,7 @@
 //  SMMSaveImageHelper.swift
 //
 //  Created by suxiangnan on 2021/5/7.
+//  Copyright © 2021 GiANTLEAP. All rights reserved.
 //
 
 import UIKit
