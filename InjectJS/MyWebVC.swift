@@ -8,101 +8,60 @@
 import UIKit
 import WebKit
 import SDWebImage
-import JXPhotoBrowser
+import JXPhotoBrowserMod
 
-class MyWebVC: UIViewController, WKNavigationDelegate, WKUIDelegate, WKScriptMessageHandler {
-
-    let callbackPictureList = "callbackPictureList"
-    let callbackShowPicture = "callbackShowPicture"
-
-    var pictures = [String]()
-
-    var myWebView: WKWebView!
+class MyWebVC: UIViewController, WKNavigationDelegate, WKUIDelegate, WebViewPhotoBrowser, ScriptMessageHandlerDelegate {
+    
+    var webPictures: [String]?
+    var webView: WKWebView!
+    var scriptMessageHandler: ScriptMessageHandler!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "WebVC"
-
-        let config = WKWebViewConfiguration()
-        let js = getMyJavaScript()
-        let script = WKUserScript(source: js, injectionTime: .atDocumentEnd, forMainFrameOnly: false)
-
-        config.userContentController.addUserScript(script)
-        config.userContentController.add(self, name: callbackPictureList)
-        config.userContentController.add(self, name: callbackShowPicture)
-
-        myWebView = WKWebView(frame: view.bounds, configuration: config)
-        myWebView.uiDelegate = self
-        myWebView.navigationDelegate = self
-        view.addSubview(myWebView!)
-
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-
+        
+        let configuration = WKWebViewConfiguration()
+        scriptMessageHandler = ScriptMessageHandler(configuration: configuration, delegate: self)
+        
+        webView = WKWebView(frame: view.bounds, configuration: WKWebViewConfiguration())
+        webView.uiDelegate = self
+        webView.navigationDelegate = self
+        view.addSubview(webView!)
+        
+        addPhotoBrowserScript()
+        
         let myProjectBundle: Bundle = Bundle.main
-
+        
         let myUrl = myProjectBundle.url(forResource: "sample1", withExtension: "html")!
-        myWebView.loadFileURL(myUrl, allowingReadAccessTo: myUrl)
-
+        webView.loadFileURL(myUrl, allowingReadAccessTo: myUrl)
+        
         // let url = URL(string: "https://appsdeveloperblog.com")!
         // myWebView.load(URLRequest(url: url))
-
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        userContentCtrl().removeAllUserScripts()
-        userContentCtrl().removeScriptMessageHandler(forName: callbackPictureList)
-        userContentCtrl().removeScriptMessageHandler(forName: callbackShowPicture)
-    }
-
-    private func userContentCtrl() -> WKUserContentController {
-        myWebView.configuration.userContentController
-    }
-
-    func getMyJavaScript() -> String {
-        if let filepath = Bundle.main.path(forResource: "fetchPictureList", ofType: "js") {
-            do {
-                return try String(contentsOfFile: filepath)
-            } catch {
-                return ""
-            }
-        } else {
-            return ""
-        }
     }
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-
-        webView.evaluateJavaScript("getPictureList();") { _, error in
-            if let err = error {
-                print("Run javascript error: \(err.localizedDescription)")
-            } else {
-                print("Run javascript Ok.")
-            }
-        }
+        runGetPictureListScript(webView)
     }
 
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
 
         if message.name == callbackPictureList,
            let data = message.body as? [String] {
-            pictures = data
+            webPictures = data
         }
 
         if message.name == callbackShowPicture,
            let idx = message.body as? String {
 
             let lan = JXPhotoBrowser()
+            lan.panDismiss = false
             lan.numberOfItems = { [weak self] in
-                self?.pictures.count ?? 0
+                self?.webPictures?.count ?? 0
             }
             lan.reloadCellAtIndex = { [weak self] context in
                 let lanternCell = context.cell as? JXPhotoBrowserImageCell
-                let imgUrl = self?.pictures[context.index]
+                let imgUrl = self?.webPictures?[context.index]
                 guard let imgURL = imgUrl else {
                     return
                 }

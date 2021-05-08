@@ -1,0 +1,6 @@
+framework module Pods_InjectJS {
+  umbrella header "Pods-InjectJS-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,1020 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		027BCA0716FB6B713151499A18A39702 /* JXPhotoBrowserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ADCD83E7D7C36D289B15CC5BB83264 /* JXPhotoBrowserCell.swift */; };
+		340177E4D2785ED212B5B56B713C2E6A /* Pods-InjectJS-InjectJSUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15C2311FCBCFD1E3225423792626BFE8 /* Pods-InjectJS-InjectJSUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35BFDC57C453506147B96CB395EBB2C5 /* Pods-InjectJS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63DD67E09CDFA605409288105F8725CD /* Pods-InjectJS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E597195C6E3EA0F6ED62129A9433FA2 /* JXPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF72DC146C2C54CE6112C0887E77A39 /* JXPhotoBrowser.swift */; };
+		410321619EEC7CC8E076DBA9AB7FEA96 /* JXPhotoBrowserAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A4E7499AEDE9B78D36D881BBFA7D93 /* JXPhotoBrowserAnimatedTransitioning.swift */; };
+		46B797776218D164D9E0D7BB09F63429 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		50CEDC5B5640124C96E8E1A0609FA74F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5D468744A013C72E552B33421B14FBA1 /* JXPhotoBrowserFadeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4FC04F337E802CFF701425C70ED3E8 /* JXPhotoBrowserFadeAnimator.swift */; };
+		61C15D8EA035D50DC6943D4B66A5E2CB /* JXPhotoBrowserNoneAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40F9ED43FB210C88B597E06D2C46BD6 /* JXPhotoBrowserNoneAnimator.swift */; };
+		697C5C211B75B583FF32A3C89B61D644 /* Pods-InjectJS-InjectJSUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DCA2BB53D738DB11440376F2B56097 /* Pods-InjectJS-InjectJSUITests-dummy.m */; };
+		8059FED198C4BC8D129E7A9E733355D9 /* Pods-InjectJSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2D004A1738A2091994BB734C30D6B64 /* Pods-InjectJSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A2FC3796C442F625B5BC34D3F573889 /* JXPhotoBrowserZoomSupportedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4131093C76AA644489CAC4C42643B8 /* JXPhotoBrowserZoomSupportedCell.swift */; };
+		8C474A23AEA078E092023BFA8BB2984A /* JXPhotoBrowserMod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C3F01A2DF48089A4081FF2575C4B32 /* JXPhotoBrowserMod-dummy.m */; };
+		8C6B75C42D0C4E9ACE1BADB4E8559E5B /* JXPhotoBrowserNumberPageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E866E635FDA79D7B1D3F19BF23E19C69 /* JXPhotoBrowserNumberPageIndicator.swift */; };
+		92D8152FD3552A8B4298B602611F4F94 /* JXPhotoBrowserZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29ACB04AF98E87CC27CE55B2AC965B7 /* JXPhotoBrowserZoomAnimator.swift */; };
+		A5A949644C7B571EAECC4DDD33738B82 /* JXPhotoBrowserLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DAFE8BD45FAFE4B8F00FC97D500B54 /* JXPhotoBrowserLog.swift */; };
+		AF1B80306F72ADA8A3C4AA65F613AAEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		BB90DE7D3433299C9D4461BF06F2B591 /* JXPhotoBrowserImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC059071A5FCD26CDC1898B505A5AE5 /* JXPhotoBrowserImageView.swift */; };
+		C902F3E6EE3963113CAC7E66C2BB0253 /* JXPhotoBrowserDefaultPageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C770EFC362E0B2F1F5B3E46535AC27E0 /* JXPhotoBrowserDefaultPageIndicator.swift */; };
+		CA24013558BEE9B85A58638BFB746878 /* JXPhotoBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6DA49C12DD87E2B2ED0A43730C6D53 /* JXPhotoBrowserView.swift */; };
+		D21A8EA7341E9A71251CDA80CB6A415B /* JXPhotoBrowserSmoothZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E3180E0D6D9346D4DB3F04E9E800F /* JXPhotoBrowserSmoothZoomAnimator.swift */; };
+		D2F928EC5DA9389B490BE0E7696EDB71 /* JXPhotoBrowserImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77EE4A7D04070E86E15C4905A7A3EB /* JXPhotoBrowserImageCell.swift */; };
+		D3395C808CF1065400B2E0EC7B5BAA6E /* JXPhotoBrowserMod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE599892BEFC2A6CB4C542D8240B88EF /* JXPhotoBrowserMod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA2A70B411E77531C05951E6B29FB4F6 /* Pods-InjectJSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4320A70D6F89BA5B7F0DD74CA9A04C /* Pods-InjectJSTests-dummy.m */; };
+		F68C851B84E325DCCEA6410F5929D460 /* JXPhotoBrowserPageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C299A006A8AC9AE97CBF7A14894D34 /* JXPhotoBrowserPageIndicator.swift */; };
+		F6B39F9619A7619E19746995504FFEE8 /* Pods-InjectJS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F86EE63BBF9B75D5D9B90D04A4E19DE /* Pods-InjectJS-dummy.m */; };
+		FA626FBAE7F75CB063C4FE2EE9CEFC2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BBC42C61119870C0B7134028606C74CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C30C22E90D79D52AA36005B71742D709;
+			remoteInfo = JXPhotoBrowserMod;
+		};
+		F07E154448B00A43F604E718BDAA2D45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A341BAFC4A591182918AC83835AAA964;
+			remoteInfo = "Pods-InjectJS";
+		};
+		F1A0E09509BC68899CB12E046ECD16F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C30C22E90D79D52AA36005B71742D709;
+			remoteInfo = JXPhotoBrowserMod;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0493817878F7ECD242542D4DDB8FBA87 /* Pods-InjectJS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InjectJS.debug.xcconfig"; sourceTree = "<group>"; };
+		106D2E35CCB2DD7F1D6968B92BB49E5B /* Pods-InjectJS-InjectJSUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InjectJS-InjectJSUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		15C2311FCBCFD1E3225423792626BFE8 /* Pods-InjectJS-InjectJSUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-InjectJS-InjectJSUITests-umbrella.h"; sourceTree = "<group>"; };
+		1F86EE63BBF9B75D5D9B90D04A4E19DE /* Pods-InjectJS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InjectJS-dummy.m"; sourceTree = "<group>"; };
+		21ADCD83E7D7C36D289B15CC5BB83264 /* JXPhotoBrowserCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPhotoBrowserCell.swift; path = Sources/JXPhotoBrowser/JXPhotoBrowserCell.swift; sourceTree = "<group>"; };
+		2B1E3180E0D6D9346D4DB3F04E9E800F /* JXPhotoBrowserSmoothZoomAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPhotoBrowserSmoothZoomAnimator.swift; path = Sources/JXPhotoBrowser/JXPhotoBrowserSmoothZoomAnimator.swift; sourceTree = "<group>"; };
+		2E4131093C76AA644489CAC4C42643B8 /* JXPhotoBrowserZoomSupportedCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPhotoBrowserZoomSupportedCell.swift; path = Sources/JXPhotoBrowser/JXPhotoBrowserZoomSupportedCell.swift; sourceTree = "<group>"; };
+		3EB0DB3E4A2B3B510A4B0D398D324BD8 /* Pods-InjectJS-InjectJSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InjectJS-InjectJSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		41E12A0B3379444D0B1705B8BB5219AA /* Pods-InjectJS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InjectJS-acknowledgements.plist"; sourceTree = "<group>"; };
+		448530DF3CC97111802215758154D0C8 /* JXPhotoBrowserMod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JXPhotoBrowserMod.release.xcconfig; sourceTree = "<group>"; };
+		45A4E7499AEDE9B78D36D881BBFA7D93 /* JXPhotoBrowserAnimatedTransitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPhotoBrowserAnimatedTransitioning.swift; path = Sources/JXPhotoBrowser/JXPhotoBrowserAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		49399D03A1E2E8ABB9F84320C7B18153 /* Pods-InjectJS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-InjectJS.modulemap"; sourceTree = "<group>"; };
+		570B1D5E865224823D33D9755135568F /* Pods-InjectJS-InjectJSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InjectJS-InjectJSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5C6D86C7581ABF9F358239B552992A7F /* Pods_InjectJSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_InjectJSTests.framework; path = "Pods-InjectJSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63DD67E09CDFA605409288105F8725CD /* Pods-InjectJS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-InjectJS-umbrella.h"; sourceTree = "<group>"; };
+		663DE67540D7AE355D6B0D4CC3DD112D /* Pods-InjectJS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InjectJS-Info.plist"; sourceTree = "<group>"; };
+		6924BD1567726DDB7849FF40606DB1A0 /* Pods-InjectJSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InjectJSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6DEBE1764B1F7A388C3CDB0689A37589 /* JXPhotoBrowserMod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JXPhotoBrowserMod.debug.xcconfig; sourceTree = "<group>"; };
+		6F0FC055B55E2746C1B0FD86D6D3729B /* Pods-InjectJSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InjectJSTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6F550A8C1FBD04E530846ACAE486CC73 /* JXPhotoBrowserMod-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXPhotoBrowserMod-prefix.pch"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		76DCA2BB53D738DB11440376F2B56097 /* Pods-InjectJS-InjectJSUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InjectJS-InjectJSUITests-dummy.m"; sourceTree = "<group>"; };
+		7E6DA49C12DD87E2B2ED0A43730C6D53 /* JXPhotoBrowserView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPhotoBrowserView.swift; path = Sources/JXPhotoBrowser/JXPhotoBrowserView.swift; sourceTree = "<group>"; };
+		829AEA5514251D9523A1BF2318792CFC /* JXPhotoBrowserMod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JXPhotoBrowserMod.framework; path = JXPhotoBrowserMod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82AEBDC83531A5E91B5688F8DDBB0990 /* Pods-InjectJS-InjectJSUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InjectJS-InjectJSUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		83EE88694B2E0D2734863D467D1E0D46 /* Pods-InjectJS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InjectJS-frameworks.sh"; sourceTree = "<group>"; };
+		8BC059071A5FCD26CDC1898B505A5AE5 /* JXPhotoBrowserImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPhotoBrowserImageView.swift; path = Sources/JXPhotoBrowser/JXPhotoBrowserImageView.swift; sourceTree = "<group>"; };
+		8DF72DC146C2C54CE6112C0887E77A39 /* JXPhotoBrowser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPhotoBrowser.swift; path = Sources/JXPhotoBrowser/JXPhotoBrowser.swift; sourceTree = "<group>"; };
+		98DAFE8BD45FAFE4B8F00FC97D500B54 /* JXPhotoBrowserLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPhotoBrowserLog.swift; path = Sources/JXPhotoBrowser/JXPhotoBrowserLog.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A11984B1204A47775FE20644FB031181 /* Pods-InjectJS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InjectJS.release.xcconfig"; sourceTree = "<group>"; };
+		A131841419B0D8147A29622C4D7CDB4D /* Pods-InjectJSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-InjectJSTests.modulemap"; sourceTree = "<group>"; };
+		A6DB8F65F6F73F016B579E91BB8D91DE /* JXPhotoBrowserMod.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JXPhotoBrowserMod.modulemap; sourceTree = "<group>"; };
+		A80976B0FB3BEC52C5E70785AC6148C7 /* Pods-InjectJSTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InjectJSTests-Info.plist"; sourceTree = "<group>"; };
+		A89918BD35B9796993D1A2396E6C395E /* Pods-InjectJS-InjectJSUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-InjectJS-InjectJSUITests.modulemap"; sourceTree = "<group>"; };
+		B0B9250F37110FC6C6AFB641859D2678 /* Pods-InjectJSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InjectJSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B40F9ED43FB210C88B597E06D2C46BD6 /* JXPhotoBrowserNoneAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPhotoBrowserNoneAnimator.swift; path = Sources/JXPhotoBrowser/JXPhotoBrowserNoneAnimator.swift; sourceTree = "<group>"; };
+		B82756A3893BC114C3FB7D580F8DC036 /* Pods_InjectJS_InjectJSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_InjectJS_InjectJSUITests.framework; path = "Pods-InjectJS-InjectJSUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1C3F01A2DF48089A4081FF2575C4B32 /* JXPhotoBrowserMod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JXPhotoBrowserMod-dummy.m"; sourceTree = "<group>"; };
+		C5A0ABB93DFA6D7AE7732AEE5EAB3B7B /* Pods_InjectJS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_InjectJS.framework; path = "Pods-InjectJS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C770EFC362E0B2F1F5B3E46535AC27E0 /* JXPhotoBrowserDefaultPageIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPhotoBrowserDefaultPageIndicator.swift; path = Sources/JXPhotoBrowser/JXPhotoBrowserDefaultPageIndicator.swift; sourceTree = "<group>"; };
+		C7E7C6DD02606398BD909E7E8EA5F3C2 /* Pods-InjectJS-InjectJSUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InjectJS-InjectJSUITests-frameworks.sh"; sourceTree = "<group>"; };
+		D29AB860B6C36E13E60190DD9455CC48 /* JXPhotoBrowserMod-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JXPhotoBrowserMod-Info.plist"; sourceTree = "<group>"; };
+		D2D004A1738A2091994BB734C30D6B64 /* Pods-InjectJSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-InjectJSTests-umbrella.h"; sourceTree = "<group>"; };
+		DB77EE4A7D04070E86E15C4905A7A3EB /* JXPhotoBrowserImageCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPhotoBrowserImageCell.swift; path = Sources/JXPhotoBrowser/JXPhotoBrowserImageCell.swift; sourceTree = "<group>"; };
+		DDAE03A40D4400425F2754F8E52E57EC /* Pods-InjectJS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InjectJS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DFBB0F475E613BAB13D1AB296A836D5D /* Pods-InjectJSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InjectJSTests.release.xcconfig"; sourceTree = "<group>"; };
+		E866E635FDA79D7B1D3F19BF23E19C69 /* JXPhotoBrowserNumberPageIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPhotoBrowserNumberPageIndicator.swift; path = Sources/JXPhotoBrowser/JXPhotoBrowserNumberPageIndicator.swift; sourceTree = "<group>"; };
+		EA4FC04F337E802CFF701425C70ED3E8 /* JXPhotoBrowserFadeAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPhotoBrowserFadeAnimator.swift; path = Sources/JXPhotoBrowser/JXPhotoBrowserFadeAnimator.swift; sourceTree = "<group>"; };
+		EB4320A70D6F89BA5B7F0DD74CA9A04C /* Pods-InjectJSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InjectJSTests-dummy.m"; sourceTree = "<group>"; };
+		F29ACB04AF98E87CC27CE55B2AC965B7 /* JXPhotoBrowserZoomAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPhotoBrowserZoomAnimator.swift; path = Sources/JXPhotoBrowser/JXPhotoBrowserZoomAnimator.swift; sourceTree = "<group>"; };
+		F2C299A006A8AC9AE97CBF7A14894D34 /* JXPhotoBrowserPageIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPhotoBrowserPageIndicator.swift; path = Sources/JXPhotoBrowser/JXPhotoBrowserPageIndicator.swift; sourceTree = "<group>"; };
+		F963F395EE7D458F187C94E1EC31ED39 /* Pods-InjectJS-InjectJSUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InjectJS-InjectJSUITests-Info.plist"; sourceTree = "<group>"; };
+		FE599892BEFC2A6CB4C542D8240B88EF /* JXPhotoBrowserMod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXPhotoBrowserMod-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3126AE4D79FAB438EC4A2531242DB13D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B797776218D164D9E0D7BB09F63429 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76B12B467B0C5A4F7B379E4D264B9C83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50CEDC5B5640124C96E8E1A0609FA74F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E92D8D85A16181C855E95BA975918221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF1B80306F72ADA8A3C4AA65F613AAEA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F66BA479DB272BDC470A8BC89644030F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA626FBAE7F75CB063C4FE2EE9CEFC2F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08BD041ACC2DCD08319663DBD6312CEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				829AEA5514251D9523A1BF2318792CFC /* JXPhotoBrowserMod.framework */,
+				C5A0ABB93DFA6D7AE7732AEE5EAB3B7B /* Pods_InjectJS.framework */,
+				B82756A3893BC114C3FB7D580F8DC036 /* Pods_InjectJS_InjectJSUITests.framework */,
+				5C6D86C7581ABF9F358239B552992A7F /* Pods_InjectJSTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37FBD048096BA6189F09D77D887E95F6 /* JXPhotoBrowserMod */ = {
+			isa = PBXGroup;
+			children = (
+				8DF72DC146C2C54CE6112C0887E77A39 /* JXPhotoBrowser.swift */,
+				45A4E7499AEDE9B78D36D881BBFA7D93 /* JXPhotoBrowserAnimatedTransitioning.swift */,
+				21ADCD83E7D7C36D289B15CC5BB83264 /* JXPhotoBrowserCell.swift */,
+				C770EFC362E0B2F1F5B3E46535AC27E0 /* JXPhotoBrowserDefaultPageIndicator.swift */,
+				EA4FC04F337E802CFF701425C70ED3E8 /* JXPhotoBrowserFadeAnimator.swift */,
+				DB77EE4A7D04070E86E15C4905A7A3EB /* JXPhotoBrowserImageCell.swift */,
+				8BC059071A5FCD26CDC1898B505A5AE5 /* JXPhotoBrowserImageView.swift */,
+				98DAFE8BD45FAFE4B8F00FC97D500B54 /* JXPhotoBrowserLog.swift */,
+				B40F9ED43FB210C88B597E06D2C46BD6 /* JXPhotoBrowserNoneAnimator.swift */,
+				E866E635FDA79D7B1D3F19BF23E19C69 /* JXPhotoBrowserNumberPageIndicator.swift */,
+				F2C299A006A8AC9AE97CBF7A14894D34 /* JXPhotoBrowserPageIndicator.swift */,
+				2B1E3180E0D6D9346D4DB3F04E9E800F /* JXPhotoBrowserSmoothZoomAnimator.swift */,
+				7E6DA49C12DD87E2B2ED0A43730C6D53 /* JXPhotoBrowserView.swift */,
+				F29ACB04AF98E87CC27CE55B2AC965B7 /* JXPhotoBrowserZoomAnimator.swift */,
+				2E4131093C76AA644489CAC4C42643B8 /* JXPhotoBrowserZoomSupportedCell.swift */,
+				941E6E68D7E99A5CC0B3683200C73251 /* Support Files */,
+			);
+			name = JXPhotoBrowserMod;
+			path = JXPhotoBrowserMod;
+			sourceTree = "<group>";
+		};
+		42E7526DB93F16B2BFA90765510F73B1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA5421514714BC5E08207B4FA467DF0B /* Pods-InjectJS */,
+				9F1C4D6B2C09EB504461B506841D55AC /* Pods-InjectJS-InjectJSUITests */,
+				AA2D2DFE6C273F2532A0B4E3E119836C /* Pods-InjectJSTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7A17FC9AF59E03F0005380E10BA197CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37FBD048096BA6189F09D77D887E95F6 /* JXPhotoBrowserMod */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		941E6E68D7E99A5CC0B3683200C73251 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6DB8F65F6F73F016B579E91BB8D91DE /* JXPhotoBrowserMod.modulemap */,
+				C1C3F01A2DF48089A4081FF2575C4B32 /* JXPhotoBrowserMod-dummy.m */,
+				D29AB860B6C36E13E60190DD9455CC48 /* JXPhotoBrowserMod-Info.plist */,
+				6F550A8C1FBD04E530846ACAE486CC73 /* JXPhotoBrowserMod-prefix.pch */,
+				FE599892BEFC2A6CB4C542D8240B88EF /* JXPhotoBrowserMod-umbrella.h */,
+				6DEBE1764B1F7A388C3CDB0689A37589 /* JXPhotoBrowserMod.debug.xcconfig */,
+				448530DF3CC97111802215758154D0C8 /* JXPhotoBrowserMod.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JXPhotoBrowserMod";
+			sourceTree = "<group>";
+		};
+		9F1C4D6B2C09EB504461B506841D55AC /* Pods-InjectJS-InjectJSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A89918BD35B9796993D1A2396E6C395E /* Pods-InjectJS-InjectJSUITests.modulemap */,
+				82AEBDC83531A5E91B5688F8DDBB0990 /* Pods-InjectJS-InjectJSUITests-acknowledgements.markdown */,
+				106D2E35CCB2DD7F1D6968B92BB49E5B /* Pods-InjectJS-InjectJSUITests-acknowledgements.plist */,
+				76DCA2BB53D738DB11440376F2B56097 /* Pods-InjectJS-InjectJSUITests-dummy.m */,
+				C7E7C6DD02606398BD909E7E8EA5F3C2 /* Pods-InjectJS-InjectJSUITests-frameworks.sh */,
+				F963F395EE7D458F187C94E1EC31ED39 /* Pods-InjectJS-InjectJSUITests-Info.plist */,
+				15C2311FCBCFD1E3225423792626BFE8 /* Pods-InjectJS-InjectJSUITests-umbrella.h */,
+				570B1D5E865224823D33D9755135568F /* Pods-InjectJS-InjectJSUITests.debug.xcconfig */,
+				3EB0DB3E4A2B3B510A4B0D398D324BD8 /* Pods-InjectJS-InjectJSUITests.release.xcconfig */,
+			);
+			name = "Pods-InjectJS-InjectJSUITests";
+			path = "Target Support Files/Pods-InjectJS-InjectJSUITests";
+			sourceTree = "<group>";
+		};
+		AA2D2DFE6C273F2532A0B4E3E119836C /* Pods-InjectJSTests */ = {
+			isa = PBXGroup;
+			children = (
+				A131841419B0D8147A29622C4D7CDB4D /* Pods-InjectJSTests.modulemap */,
+				6924BD1567726DDB7849FF40606DB1A0 /* Pods-InjectJSTests-acknowledgements.markdown */,
+				6F0FC055B55E2746C1B0FD86D6D3729B /* Pods-InjectJSTests-acknowledgements.plist */,
+				EB4320A70D6F89BA5B7F0DD74CA9A04C /* Pods-InjectJSTests-dummy.m */,
+				A80976B0FB3BEC52C5E70785AC6148C7 /* Pods-InjectJSTests-Info.plist */,
+				D2D004A1738A2091994BB734C30D6B64 /* Pods-InjectJSTests-umbrella.h */,
+				B0B9250F37110FC6C6AFB641859D2678 /* Pods-InjectJSTests.debug.xcconfig */,
+				DFBB0F475E613BAB13D1AB296A836D5D /* Pods-InjectJSTests.release.xcconfig */,
+			);
+			name = "Pods-InjectJSTests";
+			path = "Target Support Files/Pods-InjectJSTests";
+			sourceTree = "<group>";
+		};
+		AA5421514714BC5E08207B4FA467DF0B /* Pods-InjectJS */ = {
+			isa = PBXGroup;
+			children = (
+				49399D03A1E2E8ABB9F84320C7B18153 /* Pods-InjectJS.modulemap */,
+				DDAE03A40D4400425F2754F8E52E57EC /* Pods-InjectJS-acknowledgements.markdown */,
+				41E12A0B3379444D0B1705B8BB5219AA /* Pods-InjectJS-acknowledgements.plist */,
+				1F86EE63BBF9B75D5D9B90D04A4E19DE /* Pods-InjectJS-dummy.m */,
+				83EE88694B2E0D2734863D467D1E0D46 /* Pods-InjectJS-frameworks.sh */,
+				663DE67540D7AE355D6B0D4CC3DD112D /* Pods-InjectJS-Info.plist */,
+				63DD67E09CDFA605409288105F8725CD /* Pods-InjectJS-umbrella.h */,
+				0493817878F7ECD242542D4DDB8FBA87 /* Pods-InjectJS.debug.xcconfig */,
+				A11984B1204A47775FE20644FB031181 /* Pods-InjectJS.release.xcconfig */,
+			);
+			name = "Pods-InjectJS";
+			path = "Target Support Files/Pods-InjectJS";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				7A17FC9AF59E03F0005380E10BA197CF /* Pods */,
+				08BD041ACC2DCD08319663DBD6312CEF /* Products */,
+				42E7526DB93F16B2BFA90765510F73B1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		256FA00C9FF7B22885AAE17E3E3A35AD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3395C808CF1065400B2E0EC7B5BAA6E /* JXPhotoBrowserMod-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C8B4D28FFF451DFF1A08DFA8C6162D2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8059FED198C4BC8D129E7A9E733355D9 /* Pods-InjectJSTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D6F285BFA11EEFE9172EB74FB9C1750 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35BFDC57C453506147B96CB395EBB2C5 /* Pods-InjectJS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DDC57FAAD348108B6680CB49BAC0BDA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				340177E4D2785ED212B5B56B713C2E6A /* Pods-InjectJS-InjectJSUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		077AD2EEAFECB20259DCD55B5DEED460 /* Pods-InjectJS-InjectJSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA6FEBFEB96979A36D09C97A3FE417D /* Build configuration list for PBXNativeTarget "Pods-InjectJS-InjectJSUITests" */;
+			buildPhases = (
+				8DDC57FAAD348108B6680CB49BAC0BDA /* Headers */,
+				4E5B0D52DA9B4FEDBE54D76CE80F9DE3 /* Sources */,
+				E92D8D85A16181C855E95BA975918221 /* Frameworks */,
+				6E2C5CD299EDF3D2637A159F43D767D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD0CCF66CD011FFF698D7180B9B7D614 /* PBXTargetDependency */,
+			);
+			name = "Pods-InjectJS-InjectJSUITests";
+			productName = "Pods-InjectJS-InjectJSUITests";
+			productReference = B82756A3893BC114C3FB7D580F8DC036 /* Pods_InjectJS_InjectJSUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A341BAFC4A591182918AC83835AAA964 /* Pods-InjectJS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45705B0F8384C54B7029B0366AA75F8A /* Build configuration list for PBXNativeTarget "Pods-InjectJS" */;
+			buildPhases = (
+				8D6F285BFA11EEFE9172EB74FB9C1750 /* Headers */,
+				09D36EEE873087A469C08C10D9965ED7 /* Sources */,
+				3126AE4D79FAB438EC4A2531242DB13D /* Frameworks */,
+				BFE33B14C327ADB5622FDC7E486BCDEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9539B545EC73B7806434AC7592CA3BF7 /* PBXTargetDependency */,
+			);
+			name = "Pods-InjectJS";
+			productName = "Pods-InjectJS";
+			productReference = C5A0ABB93DFA6D7AE7732AEE5EAB3B7B /* Pods_InjectJS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B6CF38BE3E82ED698ED4BD72165451DE /* Pods-InjectJSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEFDF4D9644DF95DEC73B23C908EFDCA /* Build configuration list for PBXNativeTarget "Pods-InjectJSTests" */;
+			buildPhases = (
+				7C8B4D28FFF451DFF1A08DFA8C6162D2 /* Headers */,
+				22B0B95B56B0C6A8C68DA2F9370E9CA7 /* Sources */,
+				F66BA479DB272BDC470A8BC89644030F /* Frameworks */,
+				B931F3793E47E54233F64EB8B4E330BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				798E8D6C395BADB2773FF8F58E5EFB50 /* PBXTargetDependency */,
+			);
+			name = "Pods-InjectJSTests";
+			productName = "Pods-InjectJSTests";
+			productReference = 5C6D86C7581ABF9F358239B552992A7F /* Pods_InjectJSTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C30C22E90D79D52AA36005B71742D709 /* JXPhotoBrowserMod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AC8FF6B72665734C96DBB8147BBF7CE /* Build configuration list for PBXNativeTarget "JXPhotoBrowserMod" */;
+			buildPhases = (
+				256FA00C9FF7B22885AAE17E3E3A35AD /* Headers */,
+				F571D6B09D1EA90D0F58F4323D0B021D /* Sources */,
+				76B12B467B0C5A4F7B379E4D264B9C83 /* Frameworks */,
+				610435337CD9AC7DBFB670FDD84E4B1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JXPhotoBrowserMod;
+			productName = JXPhotoBrowserMod;
+			productReference = 829AEA5514251D9523A1BF2318792CFC /* JXPhotoBrowserMod.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 08BD041ACC2DCD08319663DBD6312CEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C30C22E90D79D52AA36005B71742D709 /* JXPhotoBrowserMod */,
+				A341BAFC4A591182918AC83835AAA964 /* Pods-InjectJS */,
+				077AD2EEAFECB20259DCD55B5DEED460 /* Pods-InjectJS-InjectJSUITests */,
+				B6CF38BE3E82ED698ED4BD72165451DE /* Pods-InjectJSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		610435337CD9AC7DBFB670FDD84E4B1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E2C5CD299EDF3D2637A159F43D767D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B931F3793E47E54233F64EB8B4E330BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE33B14C327ADB5622FDC7E486BCDEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09D36EEE873087A469C08C10D9965ED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B39F9619A7619E19746995504FFEE8 /* Pods-InjectJS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22B0B95B56B0C6A8C68DA2F9370E9CA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA2A70B411E77531C05951E6B29FB4F6 /* Pods-InjectJSTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E5B0D52DA9B4FEDBE54D76CE80F9DE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697C5C211B75B583FF32A3C89B61D644 /* Pods-InjectJS-InjectJSUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F571D6B09D1EA90D0F58F4323D0B021D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E597195C6E3EA0F6ED62129A9433FA2 /* JXPhotoBrowser.swift in Sources */,
+				410321619EEC7CC8E076DBA9AB7FEA96 /* JXPhotoBrowserAnimatedTransitioning.swift in Sources */,
+				027BCA0716FB6B713151499A18A39702 /* JXPhotoBrowserCell.swift in Sources */,
+				C902F3E6EE3963113CAC7E66C2BB0253 /* JXPhotoBrowserDefaultPageIndicator.swift in Sources */,
+				5D468744A013C72E552B33421B14FBA1 /* JXPhotoBrowserFadeAnimator.swift in Sources */,
+				D2F928EC5DA9389B490BE0E7696EDB71 /* JXPhotoBrowserImageCell.swift in Sources */,
+				BB90DE7D3433299C9D4461BF06F2B591 /* JXPhotoBrowserImageView.swift in Sources */,
+				A5A949644C7B571EAECC4DDD33738B82 /* JXPhotoBrowserLog.swift in Sources */,
+				8C474A23AEA078E092023BFA8BB2984A /* JXPhotoBrowserMod-dummy.m in Sources */,
+				61C15D8EA035D50DC6943D4B66A5E2CB /* JXPhotoBrowserNoneAnimator.swift in Sources */,
+				8C6B75C42D0C4E9ACE1BADB4E8559E5B /* JXPhotoBrowserNumberPageIndicator.swift in Sources */,
+				F68C851B84E325DCCEA6410F5929D460 /* JXPhotoBrowserPageIndicator.swift in Sources */,
+				D21A8EA7341E9A71251CDA80CB6A415B /* JXPhotoBrowserSmoothZoomAnimator.swift in Sources */,
+				CA24013558BEE9B85A58638BFB746878 /* JXPhotoBrowserView.swift in Sources */,
+				92D8152FD3552A8B4298B602611F4F94 /* JXPhotoBrowserZoomAnimator.swift in Sources */,
+				8A2FC3796C442F625B5BC34D3F573889 /* JXPhotoBrowserZoomSupportedCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		798E8D6C395BADB2773FF8F58E5EFB50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-InjectJS";
+			target = A341BAFC4A591182918AC83835AAA964 /* Pods-InjectJS */;
+			targetProxy = F07E154448B00A43F604E718BDAA2D45 /* PBXContainerItemProxy */;
+		};
+		9539B545EC73B7806434AC7592CA3BF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JXPhotoBrowserMod;
+			target = C30C22E90D79D52AA36005B71742D709 /* JXPhotoBrowserMod */;
+			targetProxy = F1A0E09509BC68899CB12E046ECD16F6 /* PBXContainerItemProxy */;
+		};
+		FD0CCF66CD011FFF698D7180B9B7D614 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JXPhotoBrowserMod;
+			target = C30C22E90D79D52AA36005B71742D709 /* JXPhotoBrowserMod */;
+			targetProxy = BBC42C61119870C0B7134028606C74CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		137166F6C90D8D7085BFF54CAA86179A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 570B1D5E865224823D33D9755135568F /* Pods-InjectJS-InjectJSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InjectJS-InjectJSUITests/Pods-InjectJS-InjectJSUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InjectJS-InjectJSUITests/Pods-InjectJS-InjectJSUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1E6581D6F462F6B155C465E53FF94416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFBB0F475E613BAB13D1AB296A836D5D /* Pods-InjectJSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InjectJSTests/Pods-InjectJSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InjectJSTests/Pods-InjectJSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2433E6877FCF93FB69B154AD7AE60C54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0B9250F37110FC6C6AFB641859D2678 /* Pods-InjectJSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InjectJSTests/Pods-InjectJSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InjectJSTests/Pods-InjectJSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		29A0970D75EC29614E5FC116966E21B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EB0DB3E4A2B3B510A4B0D398D324BD8 /* Pods-InjectJS-InjectJSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InjectJS-InjectJSUITests/Pods-InjectJS-InjectJSUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InjectJS-InjectJSUITests/Pods-InjectJS-InjectJSUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3D368622C6A7B0B08D35000D09A7DCE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0493817878F7ECD242542D4DDB8FBA87 /* Pods-InjectJS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InjectJS/Pods-InjectJS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InjectJS/Pods-InjectJS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7D9CACB948655AF45828FDDF423E3015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A11984B1204A47775FE20644FB031181 /* Pods-InjectJS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InjectJS/Pods-InjectJS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InjectJS/Pods-InjectJS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		94D09B042EE1B44650BB07A5D9DE018E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DEBE1764B1F7A388C3CDB0689A37589 /* JXPhotoBrowserMod.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JXPhotoBrowserMod/JXPhotoBrowserMod-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JXPhotoBrowserMod/JXPhotoBrowserMod-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/JXPhotoBrowserMod/JXPhotoBrowserMod.modulemap";
+				PRODUCT_MODULE_NAME = JXPhotoBrowserMod;
+				PRODUCT_NAME = JXPhotoBrowserMod;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E0E9C0FD5E6078C70C36511B82D586AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 448530DF3CC97111802215758154D0C8 /* JXPhotoBrowserMod.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JXPhotoBrowserMod/JXPhotoBrowserMod-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JXPhotoBrowserMod/JXPhotoBrowserMod-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/JXPhotoBrowserMod/JXPhotoBrowserMod.modulemap";
+				PRODUCT_MODULE_NAME = JXPhotoBrowserMod;
+				PRODUCT_NAME = JXPhotoBrowserMod;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AC8FF6B72665734C96DBB8147BBF7CE /* Build configuration list for PBXNativeTarget "JXPhotoBrowserMod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94D09B042EE1B44650BB07A5D9DE018E /* Debug */,
+				E0E9C0FD5E6078C70C36511B82D586AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45705B0F8384C54B7029B0366AA75F8A /* Build configuration list for PBXNativeTarget "Pods-InjectJS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D368622C6A7B0B08D35000D09A7DCE1 /* Debug */,
+				7D9CACB948655AF45828FDDF423E3015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */,
+				C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEFDF4D9644DF95DEC73B23C908EFDCA /* Build configuration list for PBXNativeTarget "Pods-InjectJSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2433E6877FCF93FB69B154AD7AE60C54 /* Debug */,
+				1E6581D6F462F6B155C465E53FF94416 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA6FEBFEB96979A36D09C97A3FE417D /* Build configuration list for PBXNativeTarget "Pods-InjectJS-InjectJSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				137166F6C90D8D7085BFF54CAA86179A /* Debug */,
+				29A0970D75EC29614E5FC116966E21B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
