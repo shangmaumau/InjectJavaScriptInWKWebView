@@ -21,18 +21,14 @@ class MyWebVC: UIViewController, WKNavigationDelegate, WKUIDelegate, WebViewPhot
 
         title = "WebVC"
         
-        let configuration = WKWebViewConfiguration()
-        scriptMessageHandler = ScriptMessageHandler(configuration: configuration, delegate: self)
-        
         webView = WKWebView(frame: view.bounds, configuration: WKWebViewConfiguration())
         webView.uiDelegate = self
         webView.navigationDelegate = self
         view.addSubview(webView!)
         
-        addPhotoBrowserScript()
+        addPhotoBrowserScript(self)
         
         let myProjectBundle: Bundle = Bundle.main
-        
         let myUrl = myProjectBundle.url(forResource: "sample1", withExtension: "html")!
         webView.loadFileURL(myUrl, allowingReadAccessTo: myUrl)
         
@@ -72,7 +68,7 @@ class MyWebVC: UIViewController, WKNavigationDelegate, WKUIDelegate, WebViewPhot
                     let action1 = UIAlertAction(title: "Save", style: .default) { _ in
 
                         let imageHelper = SMMSaveImageHelper.shared
-                        imageHelper.albumName = "HelloWorld"
+                        // imageHelper.albumName = "HelloWorld"
                         imageHelper.save(cell.imageView.image!, mode: .systemLibrary) { _, _, msg in
                             debugPrint("Save image msg: \(String(describing: msg))")
                         }
@@ -91,6 +87,7 @@ class MyWebVC: UIViewController, WKNavigationDelegate, WKUIDelegate, WebViewPhot
     }
 
     deinit {
+        deinitHandler()
         print("MyWebVC dealloc")
     }
 

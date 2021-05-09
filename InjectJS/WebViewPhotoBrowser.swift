@@ -9,12 +9,21 @@
 import WebKit
 
 protocol ScriptMessageHandlerDelegate: AnyObject {
+    
+    /// Tells the handler that a webpage sent a script message.
+    ///
+    /// Use this method to respond to a message sent from the webpage’s JavaScript code.
+    /// Use the message parameter to get the message contents and to determine the originating web view.
+    ///
+    /// - Parameters:
+    ///   - userContentController: The user content controller that delivered the message to your handler.
+    ///   - message: An object that contains the message details.
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage)
 }
 
 class ScriptMessageHandler: NSObject, WKScriptMessageHandler {
     
-    deinit { print("____ DEINITED: \(self)") }
+    deinit { debugPrint("____ DEINITED: \(self)") }
     private var configuration: WKWebViewConfiguration!
     private weak var delegate: ScriptMessageHandlerDelegate?
     private var scriptNamesSet = Set<String>()
@@ -46,15 +55,23 @@ class ScriptMessageHandler: NSObject, WKScriptMessageHandler {
 
 protocol WebViewPhotoBrowser: NSObjectProtocol {
     
+    /// 获取图片链接的脚本消息名称。
     var callbackPictureList: String { get }
+    /// 查看大图的脚本消息名称。
     var callbackShowPicture: String { get }
+    /// 网页图片列表。
     var webPictures: [String]? { get set }
+    /// WKWebView 对象。
     var webView: WKWebView! { get set }
+    /// 单独处理脚本的工具类。
     var scriptMessageHandler: ScriptMessageHandler! { get set }
     
-    /// 注入 js 代码
-    func addPhotoBrowserScript()
+    /// 注入点击网页图片可在原生界面查看大图的 js 脚本。
+    func addPhotoBrowserScript(_ target: AnyObject)
+    /// 运行获取图片列表的 js 脚本。
     func runGetPictureListScript(_ webView: WKWebView)
+    /// 析构脚本处理者。
+    func deinitHandler()
     
 }
 
@@ -72,12 +89,11 @@ extension WebViewPhotoBrowser {
         }
     }
     
-    /// 注入 js 代码
-    func addPhotoBrowserScript() {
-        
+    func addPhotoBrowserScript(_ target: AnyObject) {
         let script = WKUserScript(source: getMyJavaScript(), injectionTime: .atDocumentEnd, forMainFrameOnly: false)
         webView.configuration.userContentController.addUserScript(script)
         
+        scriptMessageHandler = ScriptMessageHandler(configuration: webView.configuration, delegate: target as! ScriptMessageHandlerDelegate)
         scriptMessageHandler.registerScriptHandling(scriptNames: [ callbackPictureList, callbackShowPicture ])
     }
     
@@ -89,6 +105,10 @@ extension WebViewPhotoBrowser {
                 print("Run javascript Ok.")
             }
         }
+    }
+    
+    func deinitHandler() {
+        scriptMessageHandler.deinitHandler()
     }
     
     private func getMyJavaScript() -> String {
