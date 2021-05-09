@@ -11,7 +11,7 @@ import SDWebImage
 import JXPhotoBrowserMod
 
 class MyWebVC: UIViewController, WKNavigationDelegate, WKUIDelegate, WebViewPhotoBrowser, ScriptMessageHandlerDelegate {
-    
+
     var webPictures: [String]?
     var webView: WKWebView!
     var scriptMessageHandler: ScriptMessageHandler!
@@ -20,18 +20,18 @@ class MyWebVC: UIViewController, WKNavigationDelegate, WKUIDelegate, WebViewPhot
         super.viewDidLoad()
 
         title = "WebVC"
-        
+
         webView = WKWebView(frame: view.bounds, configuration: WKWebViewConfiguration())
         webView.uiDelegate = self
         webView.navigationDelegate = self
         view.addSubview(webView!)
-        
+
         addPhotoBrowserScript(self)
-        
+
         let myProjectBundle: Bundle = Bundle.main
         let myUrl = myProjectBundle.url(forResource: "sample1", withExtension: "html")!
         webView.loadFileURL(myUrl, allowingReadAccessTo: myUrl)
-        
+
         // let url = URL(string: "https://appsdeveloperblog.com")!
         // myWebView.load(URLRequest(url: url))
     }
@@ -51,7 +51,6 @@ class MyWebVC: UIViewController, WKNavigationDelegate, WKUIDelegate, WebViewPhot
            let idx = message.body as? String {
 
             let lan = JXPhotoBrowser()
-            lan.panDismiss = false
             lan.numberOfItems = { [weak self] in
                 self?.webPictures?.count ?? 0
             }
