@@ -157,7 +157,6 @@
 			children = (
 				E2A442B7263D4E4500CC84F5 /* sample1.html */,
 				E2A442B3263CF07200CC84F5 /* beauty1.html */,
-				E2A442B5263CF30400CC84F5 /* fetchPictureList.js */,
 				E2A44281263CEFE100CC84F5 /* AppDelegate.swift */,
 				E2A44283263CEFE100CC84F5 /* SceneDelegate.swift */,
 				E2A44285263CEFE100CC84F5 /* ViewController.swift */,
@@ -165,6 +164,7 @@
 				E2A4428A263CEFE200CC84F5 /* Assets.xcassets */,
 				E2A4428C263CEFE200CC84F5 /* LaunchScreen.storyboard */,
 				E2A4428F263CEFE200CC84F5 /* Info.plist */,
+				E2A442B5263CF30400CC84F5 /* fetchPictureList.js */,
 				9A9D66672646960A00E15BE2 /* WebViewPhotoBrowser.swift */,
 				E2A442B1263CF03300CC84F5 /* MyWebVC.swift */,
 				9A2EBEC82644E0FB00AEAC13 /* SMMSaveImageHelper.swift */,

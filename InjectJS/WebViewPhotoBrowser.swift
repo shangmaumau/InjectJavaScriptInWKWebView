@@ -103,9 +103,9 @@ extension WebViewPhotoBrowser {
     func runGetPictureListScript(_ webView: WKWebView) {
         webView.evaluateJavaScript("getPictureList();") { _, error in
             if let err = error {
-                print("Run javascript error: \(err.localizedDescription)")
+                debugPrint("Run javascript error: \(err.localizedDescription)")
             } else {
-                print("Run javascript Ok.")
+                debugPrint("Run javascript Ok.")
             }
         }
     }
