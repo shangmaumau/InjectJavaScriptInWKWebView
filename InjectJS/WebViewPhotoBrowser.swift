@@ -64,7 +64,7 @@ protocol WebViewPhotoBrowser: NSObjectProtocol {
     /// WKWebView 对象。
     var webView: WKWebView! { get set }
     /// 单独处理脚本的工具类。
-    var scriptMessageHandler: ScriptMessageHandler! { get set }
+    var scriptMessageHandler: ScriptMessageHandler? { get set }
 
     /// 注入点击网页图片可在原生界面查看大图的 js 脚本。
     /// - Parameter target: 用来处理 ScriptMessageHandlerDelegate 的对象。
@@ -97,7 +97,7 @@ extension WebViewPhotoBrowser {
         webView.configuration.userContentController.addUserScript(script)
 
         scriptMessageHandler = ScriptMessageHandler(configuration: webView.configuration, delegate: target as! ScriptMessageHandlerDelegate)
-        scriptMessageHandler.registerScriptHandling(scriptNames: [ callbackPictureList, callbackShowPicture ])
+        scriptMessageHandler?.registerScriptHandling(scriptNames: [ callbackPictureList, callbackShowPicture ])
     }
 
     func runGetPictureListScript(_ webView: WKWebView) {
@@ -111,7 +111,7 @@ extension WebViewPhotoBrowser {
     }
 
     func deinitHandler() {
-        scriptMessageHandler.deinitHandler()
+        scriptMessageHandler?.deinitHandler()
     }
 
     private func getMyJavaScript() -> String {

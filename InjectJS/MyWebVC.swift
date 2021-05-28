@@ -14,7 +14,7 @@ class MyWebVC: UIViewController, WKNavigationDelegate, WKUIDelegate, WebViewPhot
 
     var webPictures: [String]?
     var webView: WKWebView!
-    var scriptMessageHandler: ScriptMessageHandler!
+    var scriptMessageHandler: ScriptMessageHandler?
 
     override func viewDidLoad() {
         super.viewDidLoad()
